@@ -19,13 +19,13 @@ function bodyDidLoad() {
 }
 
 function switchToDetailBlock(thisDetailBlock) {
-	// Actual moving to the block
-	$(".DetailBlock").hide();
-	$("#" + thisDetailBlock).show();
-
 	// Highlighting
 	$(".BWMasterDetail_MasterItem").removeClass("is-active");
 	$("#" + "BWMasterDetail_MasterItemFor_" + thisDetailBlock).addClass("is-active");
+
+	// Actual moving to the block
+	$(".DetailBlock").hide();
+	$("#" + thisDetailBlock).show();
 
 	// Update title
 	$("#CurrentItemHeading").html(thisDetailBlock)
