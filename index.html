@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BWMasterDetail</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="node_modules/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="BWMasterDetail.css" />
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/jqueryui/jquery-ui.min.js"></script>
+	<script src="BWMasterDetail.js"></script>
+</head>
+
+<body onload="bodyDidLoad()">
+	<div id="BWMasterDetail_Master">
+		<h1>BWMasterDetail</h1>
+		<button id="BWMasterDetail_MasterItemFor_Thing1" class="BWMasterDetail_MasterItem">Thing 1</button>
+		<button id="BWMasterDetail_MasterItemFor_Thing2" class="BWMasterDetail_MasterItem">Thing 2</button>
+		<button id="BWMasterDetail_MasterItemFor_Thing3" class="BWMasterDetail_MasterItem">Thing 3</button>
+		<button id="BWMasterDetail_MasterItemFor_Thing4" class="BWMasterDetail_MasterItem">Thing 4</button>
+		<button id="BWMasterDetail_MasterItemFor_Thing5" class="BWMasterDetail_MasterItem">Thing 5</button>
+		<button id="BWMasterDetail_MasterItemFor_Thing6" class="BWMasterDetail_MasterItem">Thing 6</button>
+		<button id="BWMasterDetail_MasterItemFor_Thing7" class="BWMasterDetail_MasterItem">Thing 7</button>
+	</div>
+	<div id="BWMasterDetail_Detail">
+		<div id="DetailToolbar">
+			<button id="BackButton">&#x25C0; BACK</button>
+			<h2 id="CurrentItemHeading">(Current item)</h2>
+		</div>
+		<div id="DetailContent">
+			<div class="DetailBlock" id="Thing1" style="display: none;">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus dolor id tincidunt congue.
+				Vivamus dignissim orci ac eros tincidunt tristique. In at lorem felis. Sed hendrerit est sed ultricies
+				euismod. Fusce tincidunt ligula in velit ullamcorper hendrerit a eget ex. Ut porttitor consectetur
+				neque, non ornare massa ullamcorper quis. Etiam massa arcu, tincidunt nec dapibus sit amet, vestibulum
+				eu ipsum. Donec vel ornare sapien. Aliquam consequat eros nec placerat imperdiet. Praesent felis nibh,
+				viverra faucibus purus eget, auctor bibendum tortor. Integer ullamcorper egestas bibendum. Etiam
+				porttitor tellus nibh, non elementum tellus posuere laoreet. Quisque vehicula, libero vitae ultricies
+				pharetra, dui felis scelerisque nibh, quis pharetra tellus eros in orci.
+			</div>
+			<div class="DetailBlock" id="Thing2" style="display: none;">thing TWO (2)</div>
+			<div class="DetailBlock" id="Thing3" style="display: none;">thing THREE (3)</div>
+		</div>
+	</div>
+</body>
+
+</html>
