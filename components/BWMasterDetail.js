@@ -1,4 +1,6 @@
 var MOBILE_THRESHOLD = 600;
+var ANIMATION_MS_SLOW = 500;
+var ANIMATION_MS_FAST = 300;
 
 var pageInitialised = false;
 var selectedItem = null;
@@ -58,15 +60,15 @@ function attachHandlers() {
 		switchToDetailBlock(thisDetailBlock);
 
 		if (pageInitialised && window.innerWidth <= MOBILE_THRESHOLD) {
-			$("#BWMasterDetail_Detail").show("slide", { direction: "right" }, 500);
-			$("#BWMasterDetail_Master").hide("slide", { direction: "left" }, 700);
+			$("#BWMasterDetail_Detail").show("slide", { direction: "right" }, ANIMATION_MS_FAST);
+			$("#BWMasterDetail_Master").hide("slide", { direction: "left" }, ANIMATION_MS_SLOW);
 		}
 	});
 
 	$("#BackButton").on("click", function () {
 		if (window.innerWidth <= MOBILE_THRESHOLD) {
-			$("#BWMasterDetail_Detail").hide("slide", { direction: "right" }, 700);
-			$("#BWMasterDetail_Master").show("slide", { direction: "left" }, 500);
+			$("#BWMasterDetail_Detail").hide("slide", { direction: "right" }, ANIMATION_MS_SLOW);
+			$("#BWMasterDetail_Master").show("slide", { direction: "left" }, ANIMATION_MS_FAST);
 		}
 	})
 

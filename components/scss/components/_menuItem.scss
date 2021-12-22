@@ -1,19 +1,31 @@
 /* Menu Items */
 .BWMasterDetail_MasterItem {
-    display: block;
-    width: 100%;
-    background-color: white;
-    border-top: 0;
-    border-bottom: 1px solid $colourOfBorders;
-    border-left: 0;
-    border-right: 0;
-    padding: 0.7rem;
-    text-align: left;
-    font-size: 1.1rem;
+	display: block;
+	width: 100%;
+	background-color: white;
+	border-top: 0;
+	border-bottom: 1px solid $colourOfBorders;
+	border-left: 0;
+	border-right: 0;
+	padding: 1rem;
+	text-align: left;
+	font-size: 1.1rem;
 }
 
 .BWMasterDetail_MasterItem:hover {
-    background-color: $colourOfHighlight;
-    color: white;
-    cursor: pointer;
+	background-color: $colourOfHighlight;
+	color: white;
+	cursor: pointer;
+}
+
+.MenuItemRarr {
+	float: right;
+	width: auto;
+}
+
+/* Only on Desktop */
+@media only screen and (min-width: $MOBILE_THRESHOLD) {
+	.MenuItemRarr {
+		display: none;
+	}
 }

@@ -1,29 +1,29 @@
 #BWMasterDetail_Master,
 #BWMasterDetail_Detail {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    background-color: $colourOfBackground;
-    overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	background-color: $colourOfBackground;
+	overflow-y: scroll;
 }
 
 #BWMasterDetail_Master {
-    width: 300px;
-    left: 0;
+	width: 300px;
+	left: 0;
 }
 
 #BWMasterDetail_Master h1 {
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin: 0;
-    border-bottom: 1px solid $colourOfBorders;
+	padding-left: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0;
+	border-bottom: 1px solid $colourOfBorders;
 }
 
 #BWMasterDetail_Detail {
-    left: 300px;
-    width: calc(100vw - 300px);
-    border-left: 1px solid $colourOfBorders;
+	left: 300px;
+	width: calc(100vw - 300px);
+	border-left: 1px solid $colourOfBorders;
 }
 
 /* Only on Mobile */
