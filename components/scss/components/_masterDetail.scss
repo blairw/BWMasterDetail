@@ -1,0 +1,52 @@
+#BWMasterDetail_Master,
+#BWMasterDetail_Detail {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: $colourOfBackground;
+    overflow-y: scroll;
+}
+
+#BWMasterDetail_Master {
+    width: 300px;
+    left: 0;
+}
+
+#BWMasterDetail_Master h1 {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    border-bottom: 1px solid $colourOfBorders;
+}
+
+#BWMasterDetail_Detail {
+    left: 300px;
+    width: calc(100vw - 300px);
+    border-left: 1px solid $colourOfBorders;
+}
+
+/* Only on Mobile */
+@media only screen and (max-width: $MOBILE_THRESHOLD) {
+	#BWMasterDetail_Master,
+	#BWMasterDetail_Detail {
+		width: 100vw;
+	}
+
+	#BWMasterDetail_Master {
+		z-index: 5;
+	}
+
+	#BWMasterDetail_Detail {
+		z-index: 10;
+		left: 0;
+	}
+}
+
+/* Only on Desktop */
+@media only screen and (min-width: $MOBILE_THRESHOLD) {
+	.BWMasterDetail_MasterItem.is-active {
+		background-color: $colourOfHighlight;
+		color: white;
+	}
+}

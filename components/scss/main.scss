@@ -1,0 +1,13 @@
+$colourOfBackground: #F5EFF9;
+$colourOfToolbar: #a48ce6;
+$colourOfHighlight: #6750A4; 
+$colourOfBorders: lightgray;
+
+$MOBILE_THRESHOLD: 600px;
+
+@import 'base/basics.scss';
+@import 'base/typography.scss';
+@import 'components/masterDetail.scss';
+@import 'components/menuItem.scss';
+@import 'components/detailComponents.scss';
+@import 'components/backButton.scss';

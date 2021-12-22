@@ -1,0 +1,22 @@
+/* Only on Desktop */
+@media only screen and (min-width: $MOBILE_THRESHOLD) {
+    #BackButton {
+        display: none;
+    }
+}
+
+#BackButton {
+    border-radius: 0.5rem;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    background: none;
+}
+
+#BackButton:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}

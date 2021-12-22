@@ -1,129 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-body, button {
-	font-family: 'Cabin', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  margin: 0;
 }
 
-body {
-	margin: 0;
+body, button {
+  font-family: "Cabin", sans-serif;
 }
 
 #BWMasterDetail_Master,
 #BWMasterDetail_Detail {
-	position: fixed;
-	top: 0;
-	height: 100vh;
-	background-color: #F5EFF9;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background-color: #F5EFF9;
+  overflow-y: scroll;
 }
 
 #BWMasterDetail_Master {
-	width: 300px;
-	left: 0;
+  width: 300px;
+  left: 0;
 }
 
 #BWMasterDetail_Master h1 {
-	padding-left: 1rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	margin: 0;
-	border-bottom: 1px solid lightgray;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  border-bottom: 1px solid lightgray;
 }
 
 #BWMasterDetail_Detail {
-	left: 300px;
-	width: calc(100vw - 300px);
-	border-left: 1px solid lightgray;
+  left: 300px;
+  width: calc(100vw - 300px);
+  border-left: 1px solid lightgray;
 }
 
 /* Only on Mobile */
 @media only screen and (max-width: 600px) {
-	#BWMasterDetail_Master,
-	#BWMasterDetail_Detail {
-		width: 100vw;
-	}
+  #BWMasterDetail_Master,
+#BWMasterDetail_Detail {
+    width: 100vw;
+  }
 
-	#BWMasterDetail_Master {
-		z-index: 5;
-	}
+  #BWMasterDetail_Master {
+    z-index: 5;
+  }
 
-	#BWMasterDetail_Detail {
-		z-index: 10;
-		left: 0;
-	}
+  #BWMasterDetail_Detail {
+    z-index: 10;
+    left: 0;
+  }
+}
+/* Only on Desktop */
+@media only screen and (min-width: 600px) {
+  .BWMasterDetail_MasterItem.is-active {
+    background-color: #6750A4;
+    color: white;
+  }
+}
+/* Menu Items */
+.BWMasterDetail_MasterItem {
+  display: block;
+  width: 100%;
+  background-color: white;
+  border-top: 0;
+  border-bottom: 1px solid lightgray;
+  border-left: 0;
+  border-right: 0;
+  padding: 0.7rem;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.BWMasterDetail_MasterItem:hover {
+  background-color: #6750A4;
+  color: white;
+  cursor: pointer;
+}
+
+#DetailToolbar {
+  background-color: #a48ce6;
+  color: white;
+  padding: 0.5rem;
+}
+
+#DetailContent {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.DetailBlock {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  line-height: 1.5rem;
+}
+
+#CurrentItemHeading {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
 }
 
 /* Only on Desktop */
 @media only screen and (min-width: 600px) {
-	.BWMasterDetail_MasterItem.is-active {
-		background-color: #6750A4;
-		color: white;
-	}
-
-	#BackButton {
-		display: none;
-	}
+  #BackButton {
+    display: none;
+  }
 }
-
-/* Menu Items */
-.BWMasterDetail_MasterItem {
-	display: block;
-	width: 100%;
-	background-color: white;
-	border-top: 0;
-	border-bottom: 1px solid lightgray;
-	border-left: 0;
-	border-right: 0;
-	padding: 0.7rem;
-	text-align: left;
-	font-size: 1.1rem;
-
-}
-
-.BWMasterDetail_MasterItem:hover {
-	background-color: #6750A4;
-	color: white;
-	cursor: pointer;
-}
-
 #BackButton {
-	border-radius: 0.5rem;
-	border: none;
-	border: 1px solid white;
-	color: white;
-	padding: 0.5rem;
-	font-size: 0.8rem;
-	letter-spacing: 0.1rem;
-	background: none;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  background: none;
 }
 
 #BackButton:hover {
-	background-color: rgba(255,255,255,0.5);
-	cursor: pointer;
-}
-
-#DetailToolbar {
-	background-color: #a48ce6;
-	color: white;
-	padding: 0.5rem;
-}
-
-#DetailContent {
-	max-width: 600px;
-	margin: 0 auto;
-	padding: 1rem;
-}
-
-.DetailBlock {
-	background-color: white;
-	padding: 1rem;
-	border-radius: 1rem;
-	line-height: 1.5rem;
-}
-
-#CurrentItemHeading {
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: 1rem;
-	font-size: 1.2rem;
-	display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
